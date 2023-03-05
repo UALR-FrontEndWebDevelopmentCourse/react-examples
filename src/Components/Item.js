@@ -1,7 +1,11 @@
 function Item({name, isPacked}) {
+    let itemContent = name;
+    if (isPacked) {
+        itemContent = <del>{name + " ✔"}</del>;
+    }
     return (
         <li className="item">
-            {isPacked ? <del>{name + ' ✔'}</del> : name}
+            {itemContent}
         </li>
     );
 }
