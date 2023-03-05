@@ -7,7 +7,7 @@ function Profile() {
     );
 }
 
-export default function Gallery() {
+function Gallery() {
     return (
         <section>
             <h1>Ada Lovelace. The first programmer.</h1>
@@ -16,3 +16,4 @@ export default function Gallery() {
         </section>
     );
 }
+export default Gallery;
