@@ -1,12 +1,12 @@
 import './App.css';
-import './Gallery'
-import Gallery from "./Gallery";
+import Gallery, {Profile} from "./Gallery";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
           <Gallery/>
+          <Profile/>
       </header>
     </div>
   );

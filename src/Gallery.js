@@ -1,4 +1,4 @@
-function Profile() {
+export function Profile() {
     return (
         <img
             src="https://imgur.com/02vmPIg.gif"
@@ -6,14 +6,12 @@ function Profile() {
         />
     );
 }
-
-function Gallery() {
+export default function Gallery() {
     return (
         <section>
             <h1>Ada Lovelace. The first programmer.</h1>
-            <Profile />
-            <Profile />
+            <Profile/>
+            <Profile/>
         </section>
     );
 }
-export default Gallery;
