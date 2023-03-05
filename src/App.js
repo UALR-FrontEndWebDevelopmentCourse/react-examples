@@ -1,25 +1,25 @@
 import './App.css';
-import Avatar from "./Avatar";
+import Profile from "./Profile";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
           <div>
-              <Avatar
+              <Profile
                   person={{
                       name: 'Katsuko Saruhashi',
                       imageId: 'YfeOqp2'
                   }}
               />
-              <Avatar
+              <Profile
                   size={80}
                   person={{
                       name: 'Aklilu Lemma',
                       imageId: 'OKS67lh'
                   }}
               />
-              <Avatar
+              <Profile
                   size={50}
                   person={{
                       name: 'Lin Lanying',
