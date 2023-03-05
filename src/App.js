@@ -1,35 +1,26 @@
 import './App.css';
-import Profile from "./Components/Profile";
+import Item from "./Components/Item";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-          <div>
-              <Profile
-                  person={{
-                      name: 'Katsuko Saruhashi',
-                      imageId: 'YfeOqp2'
-                  }}
-              />
-              <Profile
-                  size={80}
-                  person={{
-                      name: 'Aklilu Lemma',
-                      imageId: 'OKS67lh'
-                  }}
-              />
-              <Profile
-                  size={50}
-                  person={{
-                      name: 'Lin Lanying',
-                      imageId: '1bX5QH6'
-                  }}
-              />
-          </div>
-      </header>
-    </div>
-  );
+    return (
+        <section>
+            <h1>Sally Ride's Packing List</h1>
+            <ul>
+                <Item
+                    isPacked={true}
+                    name="Space suit"
+                />
+                <Item
+                    isPacked={true}
+                    name="Helmet with a golden leaf"
+                />
+                <Item
+                    isPacked={false}
+                    name="Photo of Tam"
+                />
+            </ul>
+        </section>
+    );
 }
 
 export default App;
