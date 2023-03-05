@@ -7,7 +7,6 @@ function App() {
       <header className="App-header">
           <div>
               <Avatar
-                  size={100}
                   person={{
                       name: 'Katsuko Saruhashi',
                       imageId: 'YfeOqp2'
