@@ -3,10 +3,7 @@ import Toolbar from "./Components/Toolbar";
 
 function App() {
     return (
-        <Toolbar
-            onPlayMovie={() => alert('Playing!')}
-            onUploadImage={() => alert('Uploading!')}
-        />
+        <Toolbar/>
     );
 }
 

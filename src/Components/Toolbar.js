@@ -1,19 +1,19 @@
-export default function Toolbar({ onPlayMovie, onUploadImage }) {
+export default function Toolbar() {
     return (
         <div>
-            <Button onClick={onPlayMovie}>
+            <Button message="Playing!">
                 Play Movie
             </Button>
-            <Button onClick={onUploadImage}>
+            <Button message="Uploading!">
                 Upload Image
             </Button>
         </div>
     );
 }
 
-function Button({ onClick, children }) {
+function Button({ message, children }) {
     return (
-        <button onClick={onClick}>
+        <button onClick={() => alert(message)}>
             {children}
         </button>
     );
