@@ -1,7 +1,7 @@
-import List from "./Components/FilterList";
+import ShapeEditor from "./Components/ShapeEditor";
 
 export default function App() {
     return (
-        <List/>
+        <ShapeEditor/>
     );
 }
