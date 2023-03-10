@@ -1,19 +1,35 @@
 export default function Toolbar() {
     return (
         <div>
-            <Button message="Playing!">
-                Play Movie
-            </Button>
-            <Button message="Uploading!">
-                Upload Image
-            </Button>
+            <PlayButton movieName="Kiki's Delivery Service" />
+            <UploadButton />
         </div>
     );
 }
 
-function Button({ message, children }) {
+function PlayButton({ movieName }) {
+    function handlePlayClick() {
+        alert(`Playing ${movieName}!`);
+    }
+
     return (
-        <button onClick={() => alert(message)}>
+        <Button onClick={handlePlayClick}>
+            Play "{movieName}"
+        </Button>
+    );
+}
+
+function UploadButton() {
+    return (
+        <Button onClick={() => alert('Uploading!')}>
+            Upload Image
+        </Button>
+    );
+}
+
+function Button({ onClick, children }) {
+    return (
+        <button onClick={onClick}>
             {children}
         </button>
     );
