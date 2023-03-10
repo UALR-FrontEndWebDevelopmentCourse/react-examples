@@ -1,7 +1,7 @@
-import Form from "./Components/ProfileForm";
+import List from "./Components/UpdateList";
 
 export default function App() {
     return (
-        <Form/>
+        <List/>
     );
 }
