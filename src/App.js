@@ -1,20 +1,7 @@
-import {useEffect, useState} from 'react';
-import Clock from './Components/Clock.js';
-
-function useTime() {
-    const [time, setTime] = useState(() => new Date());
-    useEffect(() => {
-        const id = setInterval(() => {
-            setTime(new Date());
-        }, 1000);
-        return () => clearInterval(id);
-    }, []);
-    return time;
-}
+import Form from "./Components/Form";
 
 export default function App() {
-    const time = useTime();
     return (
-        <Clock time={time.toLocaleTimeString()}/>
+        <Form/>
     );
 }
