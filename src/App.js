@@ -1,9 +1,12 @@
 import './App.css';
-import List from "./Components/List";
+import Toolbar from "./Components/Toolbar";
 
 function App() {
     return (
-        <section><List/></section>
+        <Toolbar
+            onPlayMovie={() => alert('Playing!')}
+            onUploadImage={() => alert('Uploading!')}
+        />
     );
 }
 
