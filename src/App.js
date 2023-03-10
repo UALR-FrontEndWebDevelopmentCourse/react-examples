@@ -1,7 +1,7 @@
-import MovingDot from "./Components/MovingDot";
+import Form from "./Components/ProfileForm";
 
 export default function App() {
     return (
-        <MovingDot/>
+        <Form/>
     );
 }
