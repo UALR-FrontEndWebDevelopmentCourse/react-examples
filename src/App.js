@@ -1,7 +1,7 @@
-import CounterList from "./Components/CounterList";
+import List from "./Components/InsertList";
 
 export default function App() {
     return (
-        <CounterList/>
+        <List/>
     );
 }
