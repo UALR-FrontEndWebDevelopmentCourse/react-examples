@@ -1,9 +1,9 @@
-import MockForm from "./Components/MockForm";
+import FullForm from "./Components/FullForm";
 
 export default function App() {
     return (
         <div>
-            <MockForm status={"error"}/>
+            <FullForm/>
         </div>
     );
 }
