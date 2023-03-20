@@ -1,17 +1,15 @@
 import NameForm from "./Components/NameForm";
 import UserForm from "./Components/UserForm";
-import FlavorForm from "./Components/FlavorForm";
+import UncontrolledNameForm from "./Components/UncontrolledNameForm";
+import UncontrolledRefNameForm from "./Components/UncontrolledRefNameForm";
 
 export default function App() {
     return (
         <div>
-            <h1>Controlled components</h1>
-            <h2>Class-based component</h2>
-            <NameForm/>
+            <h1>Uncontrolled components</h1>
             <h2>Function-based components</h2>
-            <UserForm/>
-            <h2>Select-based components</h2>
-            <FlavorForm/>
+            <UncontrolledNameForm/>
+            <UncontrolledRefNameForm/>
         </div>
     );
 }
